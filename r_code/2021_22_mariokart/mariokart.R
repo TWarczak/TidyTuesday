@@ -31,22 +31,23 @@ record_tbl <- records %>%
                                     "images/2021_22_mariokart/green_single.png")))) %>%
               ungroup() %>%
               mutate(track     = as_factor(track),
-                     track_num = recode(track, "Banshee Boardwalk"     = 1,
-                                               "Bowser's Castle"       = 2,
-                                               "Choco Mountain"        = 3,
-                                               "D.K.'s Jungle Parkway" = 4,
-                                               "Frappe Snowland"       = 5,
-                                               "Kalimari Desert"       = 6,
-                                               "Koopa Troopa Beach"    = 7,
-                                               "Luigi Raceway"         = 8,
-                                               "Mario Raceway"         = 9,
-                                               "Moo Moo Farm"          = 10,
-                                               "Rainbow Road"          = 11,
-                                               "Royal Raceway"         = 12,
-                                               "Sherbet Land"          = 13,
-                                               "Toad's Turnpike"       = 14,
-                                               "Wario Stadium"         = 15,
-                                               "Yoshi Valley"          = 16 )) %>%
+                     track_num = recode(track,
+                                        "Banshee Boardwalk"     = 1,
+                                        "Bowser's Castle"       = 2,
+                                        "Choco Mountain"        = 3,
+                                        "D.K.'s Jungle Parkway" = 4,
+                                        "Frappe Snowland"       = 5,
+                                        "Kalimari Desert"       = 6,
+                                        "Koopa Troopa Beach"    = 7,
+                                        "Luigi Raceway"         = 8,
+                                        "Mario Raceway"         = 9,
+                                        "Moo Moo Farm"          = 10,
+                                        "Rainbow Road"          = 11,
+                                        "Royal Raceway"         = 12,
+                                        "Sherbet Land"          = 13,
+                                        "Toad's Turnpike"       = 14,
+                                        "Wario Stadium"         = 15,
+                                        "Yoshi Valley"          = 16 )) %>%
               arrange(track_num) %>%
               mutate(id      = row_number(),
                      starman = ifelse(id == 115, "images/2021_22_mariokart/starman3.png", NA ),
@@ -201,5 +202,3 @@ coin_tbl <- record_tbl %>%
                         but lost record to 'Dan' 35 days later.</p>"
                )))
 ggsave("rainbow_road.png", width = 25, height = 22.3, dpi = 600)
-ggsave("rainbow_road.pdf",  width = 25, height = 22.3, device = pdf)
-
