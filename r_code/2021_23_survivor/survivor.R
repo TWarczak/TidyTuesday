@@ -187,3 +187,5 @@ ggplot(personalities_all ) +
                                               >Sunbeam</span><span style='color:#ffffff'>: % of all winners</span></p>")))
 
 ggsave("survivor.png", width = 20, height = 20, dpi = 600)
+ggsave("survivor_low_res.png", width = 20, height = 20, dpi = 200)
+

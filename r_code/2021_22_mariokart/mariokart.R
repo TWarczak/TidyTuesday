@@ -173,8 +173,7 @@ coin_tbl <- record_tbl %>%
                                     record_days = 500,
     label = "<p style='font-family:SuperMario;font-size:110pt;color:#ff0000'>
                 Mario Kart 64</p><br>
-             <p style='font-family:SuperMario;font-size:90pt;color:black'> . <
-                span style='color:#4db000'>World Records</span></p><br>
+             <p style='font-family:SuperMario;font-size:90pt;color:black'> . <span style='color:#4db000'>World Records</span></p><br>
              <p style='font-family:Roboto;font-size:18pt;color:white'> Line =
                 world record held by player, sorted by track, purple: Banshee
                 Boardwalk to red: Yoshi Valley. Line length = cumulative days
@@ -202,3 +201,4 @@ coin_tbl <- record_tbl %>%
                         but lost record to 'Dan' 35 days later.</p>"
                )))
 ggsave("rainbow_road.png", width = 25, height = 22.3, dpi = 600)
+ggsave("rainbow_road_low_res.png", width = 25, height = 22.3, dpi = 100)
