@@ -166,15 +166,7 @@ fish_plot <- ggplot(fish_practice_long, aes(x     = year_date,
                    axis.text.x        = element_text(color = "#e5d8bd",
                                                      size = 13),
                    legend.position    = "bottom") +
-             geom_hline(yintercept = 0,
-                        color      = "#e5d8bd",
-                        size       = 0.5,
-                        alpha      = 0.2) +
-             geom_hline(yintercept = 25000,
-                        color      = "#e5d8bd",
-                        size       = 0.5,
-                        alpha      = 0.2) +
-             geom_hline(yintercept = 50000,
+             geom_hline(yintercept = c(0,25000,50000),
                         color      = "#e5d8bd",
                         size       = 0.5,
                         alpha      = 0.2) +
