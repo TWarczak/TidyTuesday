@@ -195,16 +195,16 @@ scale_color_todd <- function(...){
 # Extra pretty plot for twitter banner
 ggplot(fish_practice_long) +
   geom_line(aes(x = year_date, y = production, color = Fish),
-            size = 2.6, linetype = 1, show.legend = FALSE) +
+            size = 0.4, linetype = 1, show.legend = FALSE) +
   geom_line(aes(x = year_date, y = production, color = Fish),
-            size = 1, linetype = 3, show.legend = FALSE) +
+            size = 0.2, linetype = 3, show.legend = FALSE) +
   coord_cartesian() +
   theme_void() +
   theme(plot.background = element_rect(fill = "#168aad")) +
   scale_color_todd()
 
-ggsave("roll_avg4.png", width = 40, height = 13.5, dpi = 600)
-ggsave("roll_avg.png", width = 40, height = 40, dpi = 400)
+ggsave("roll_avg4.png", width = 5, height = 3, dpi = 200)
+ggsave("roll_avg.png", width = 4, height = 3, dpi = 200)
 
 
 # blues <-  colorRampPalette(c("#a9d6e5", "#012a4a"))(100)
