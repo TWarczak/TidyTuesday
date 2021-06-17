@@ -203,8 +203,10 @@ ggplot(fish_practice_long) +
   theme(plot.background = element_rect(fill = "#168aad")) +
   scale_color_todd()
 
-ggsave("roll_avg4.png", width = 5, height = 3, dpi = 200)
 ggsave("roll_avg.png", width = 4, height = 3, dpi = 200)
+ggsave("roll_avg2.png", width = 9, height = 3, dpi = 600)
+ggsave("roll_avg4.png", width = 5, height = 3, dpi = 200)
+
 
 
 # blues <-  colorRampPalette(c("#a9d6e5", "#012a4a"))(100)
