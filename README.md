@@ -29,5 +29,6 @@
 
 ### [Week 2021/24](https://github.com/TWarczak/TidyTuesday/tree/main/r_code/2021_24_fish) 🦈 Source: [Great Lakes Fishery Commission](http://www.glfc.org/great-lakes-databases.php)
 ![./plots/2021_24_fish/fish2.gif](https://raw.githubusercontent.com/TWarczak/TidyTuesday/main/plots/2021_24_fish/fish2.gif)
+![./plots/2021_24_fish/roll_avg.png](https://raw.githubusercontent.com/TWarczak/TidyTuesday/main/plots/2021_24_fish/roll_avg.png)
 
 ***
